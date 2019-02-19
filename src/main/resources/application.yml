@@ -1,0 +1,53 @@
+# mysql
+spring:
+    # 环境 dev|test|pro
+    profiles:
+        active: dev
+    # jackson时间格式化
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss  
+    http:
+        multipart:
+          max-file-size: 100MB
+          max-request-size: 100MB
+          enabled: true
+
+
+# Mybatis配置
+#mybatis:
+#    mapperLocations: classpath*:mapper/**/*.xml
+#    configLocation: classpath:mybatis.xml
+
+#thymelea模板配置
+thymeleaf:
+  suffix: .html
+  encoding: utf-8
+  cache: false
+  mode: HTML5
+  servlet:
+    content-type: text/html
+
+renren:
+    redis:
+        open: false  # 是否开启redis缓存  true开启   false关闭
+    shiro:
+        redis: false # true表示shiro session存到redis里，需要开启redis，才会生效【分布式场景】
+
+# 日志文件
+logging:
+  file: myapp.log
+  max-history: 1
+  max-size: 10MB
+  path: /
+
+# 邮箱设置
+mail:
+  host: smtp.163.com
+  username: 13535240192@163.com
+  password:
+  properties:
+      mail:
+          smtp:
+              auth: true
+              timeout: 25000
