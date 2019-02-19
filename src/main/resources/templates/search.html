@@ -12,48 +12,26 @@
 		<script type="text/javascript" src="js/amazeui.min.js" ></script>
 	</head>
 	<body>
-		<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}' >
-			  <ul class="am-slides">
-			      <li><img src="images/banner.jpg"> </li>
-			      <li><img src="images/banner1.jpg"> </li>
-			  </ul> 
-		</div>
-		<a href="search" class="search">
-			开启你的美食之旅...
-		</a>
-		<ul class="nav">
-			<li>
-				<a href="search">
-					<img src="images/icon.jpg" />
-					<p>最新推荐</p>
-				</a>
-			</li>
-			<li>
-				<a href="search">
-					<img src="images/icon1.jpg" />
-					<p>热门菜谱</p>
-				</a>
-			</li>
-			<li>
-				<a href="search">
-					<img src="images/icon2.jpg" />
-					<p>人气菜肴</p>
-				</a>
-			</li>
-			<li>
-				<a href="yhq.html">
-					<img src="images/icon3.jpg" />
-					<p>优惠券</p>
-				</a>
-			</li>
-		</ul>
-		<div data-am-widget="titlebar" class="am-titlebar am-titlebar-default title" >
-		    <h2 class="am-titlebar-title ">   积分菜品 </h2>
-		    <nav class="am-titlebar-nav">
-		        <a href="#more" class="">更多 &raquo;</a>
-		    </nav>
-		</div>
-	    <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-gallery-default product">
+		<header data-am-widget="header" class="am-header am-header-default header">
+		  <div class="am-header-left am-header-nav">
+		     <a href="#left-link" class=""> 
+		       <i class="am-header-icon am-icon-angle-left"></i>
+		     </a>
+		  </div>
+		  <h1 class="am-header-title"> <a href="#title-link" class="" style="color: #333;">厨房妈妈</a></h1>
+		  <div class="am-header-right am-header-nav">
+		     <a href="#right-link" class=""> </a>
+		  </div>
+	  </header>
+	  <div class="search-input">
+	  	  <input type="text" placeholder="请输入您搜索的内容" />
+	  </div>
+	  <ul class="paixu">
+	  	<li><a href="">默认</a></li>
+	  	<li><a href="">销量</a></li>
+	  	<li><a href="">价格</a></li>
+	  </ul>
+	   <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-gallery-default product">
 		      <li>
 		        <div class="am-gallery-item">
 		            <a href="detail" class="">
@@ -89,7 +67,7 @@
 		      </li>
 		      <li>
 		        <div class="am-gallery-item">
-		            <a href="detail" class="">
+		            <a href="detail.html" class="">
 		              <img src="images/p3.png"  alt=""/>
 		                <h3 class="am-gallery-title">酷炫绵绵球</h3>
 		                <div class="am-gallery-desc">
@@ -99,7 +77,5 @@
 		        </div>
 		      </li>-->
 		 </ul>
-		<div th:insert="foot.html"></div>
-
 	</body>
 </html>

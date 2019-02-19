@@ -21,6 +21,7 @@ spring:
 
 #thymelea模板配置
 thymeleaf:
+  prefix: classpath:/templates/
   suffix: .html
   encoding: utf-8
   cache: false
